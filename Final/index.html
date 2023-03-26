@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="NumberGuess.css">
+</head>
+<body>
+    <main>
+        <h1>Welcome the the Random Number Guessing Game!</h1>
+        <h2>
+            Each user will input there name and their and the number they want to guess then click submit to see who guess correctly.
+            If no one guesses correctly the first time then you can change your number a keep guessing until someone is correct!
+        </h2>
+        <h2>The reset button will reset the game to the starting point</h2>
+
+        <!--
+            Div that display the screen game to these user with spaces for error messages
+            and submit and reset buttons. Submit button will take the data in the fields
+            and run a script to see if anyone was correct. The reset button will clear
+            all element the users have input into the div.
+        -->
+        <div id="gameScreen">
+            <label for="player1Name">Player 1 Name</label>
+            <input type="text" name="player1Name" id="player1Name"><br>
+            <label for="player1Guess">Player 1 Guess</label>
+            <input type="int" name="play1Guess" id="player1Guess"> <br>
+            <label for="player2Name">Player 2 Name</label>
+            <input type="text" name="player2Name" id="player2Name"><br>
+            <label for="player2Guess">Player 2 Guess</label>
+            <input type="int" name="play2Guess" id="player2Guess"><br>
+            <input type="button" name="submit" id="submit" value="Submit">
+            <input type="button" name="reset" id="reset" value="Reset">
+            <p id="p1NameError"></p>
+            <p id="p2NameError"></p>
+        </div>
+    </main> 
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="numberGuess.js"></script>
+    <script src="players.js"></script>
+</body>
+</html>
